@@ -1,0 +1,67 @@
+Actual version:
+
+v0.2.5
+- base for LoadBMP256
+
+---------------------
+v0.2.4 (10.5.2020)
+- reverse pixels methods simplified and unified
+- SaveToBMP focused on 24bit version
+- SaveToBMP 32bit version prepared, but alpha is not working (wrong BMP header size)
+
+v0.2.3 (10.5.2020)
+- BMP file is now saved correctly (both 24/32 bit)
+
+v0.2.2 (10.5.2020)
+- fixed errors with alpha drawing
+- BMP file is now loaded correctly (both 24/32 bit)
+- error is shown, when not correct BMP (width is not multiply of 4, is used)
+
+v0.2.1 (9.5.2020)
+- floodFill method
+- rechecked some issues with BMP files
+- enhanced printing output information from loading BMP process
+- new (mostly for debuging) method: ShowPBInfo
+- BMP file pixels are loaded using imageSize value, instead of computing it
+
+v0.2.0 (6.5.2020)
+- refactored Painter class
+	- Painter documentation completed
+	- GetPosition moved into the PBImage class
+- new alternatives for PBImage.Clear()
+- new alternatives for PBImage.LoadFromBMP()
+- Tools class created, create int,word values from bytes moved here
+- Tool TC method added (creates SColor from color "name")
+- new SetColor method+variants for SColor structure
+- LoadBMPv2 removed (not used anyway)
+
+v0.1.3 (5.5.2020)
+- draw with bitmap with key color as transparency (DrawImageKey)
+- draw with bitmap with alpha channel (DrawImageAlpha)
+
+v0.1.2 (5.5.2020)
+- draw with bitmap (DrawImage)
+- new Putpixel variant
+- new GetPosition variant
+
+v0.1.1 (4.5.2020)
+- painter: circle (ellipse tool)
+- painter: polygon (polygon tool)
+- tested different aproach to load BMP (refused)
+
+v0.1.0
+- reworked structure (int for internal storage),
+this can speed up running, because of lesser amount of variable conversions
+
+v0.0.5 (3.5.2020)
+- painter: rectangle
+- fixed issues with line rendering
+- fixed issue with reverse pixel order
+- project name change: SpeedPicture
+
+v4 (2.5.2020)
+- reworked reverse pixel order
+- painter class (putpixel, line, getposition, scolor)
+
+v1 (27.4.2020)
+- first attempt
